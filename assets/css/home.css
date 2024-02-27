@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:content-box ;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Roboto' ,sans-serif;
+}
+
+
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h5{
+    color: white;
+    font-size: 38px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+}
+.home .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+.changecontent::after{
+    content: ' ';
+    color: #ffa500;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+    0%{content: "foum zguid";}
+    10%{content: "Mhamid";}
+    20%{content: "Mrakech";}
+    30%{content: "foum zguid";}
+    40%{content: "Agadir";}
+    50%{content: "foum zguid";}
+    60%{content: "tarodant";}
+    70%{content: "foum zguid";}
+    80%{content: "mhamid";}
+    90%{content: "agadir";}
+    100%{content: "foum zguid";}
+} 
+.home .content p{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+.home .content .a{
+    padding: 10px;
+    background: #A05F3A;
+    
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.home .content .a:hover{
+    background: #ffa500;
+    color: white;
+}
+@media (max-width:850px){
+    .home{
+        background-position: 50%;
+    }
+}
+@media (max-width:450px){
+    .home .content h5{
+        font-size: 25px;
+    }
+    .home .content h1{
+        font-size: 38px;
+    }
+    .home .content p{
+        font-size: 13px;
+    }
+    /**/
+    .home .content h1{
+        color: white;
+        font-size: 20px;
+        font-weight: 250;
+        text-shadow: 0px 1px 1px black;
+        margin-top: 3px;
+    }
+    .changecontent::after{
+        content: ' ';
+        color: #ffa500;
+        text-shadow: 0px 1px 1px black;
+        animation: changetext 10s infinite linear;
+    }
+    @keyframes changetext{
+        0%{content: "Marrakech";}
+        10%{content: "Imllil";}
+        20%{content: "foum zguid";}
+        30%{content: "erg chegaga";}
+        
+    }
+}
+
