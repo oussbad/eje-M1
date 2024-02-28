@@ -28,3 +28,32 @@ document.addEventListener('DOMContentLoaded', function () {
     mobileMenu.classList.toggle('hidden');
   });
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Get all the navigation links
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  // Loop through each navigation link
+  navLinks.forEach(link => {
+      // Add click event listener
+      link.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          // Get the target section ID from the href attribute
+          const targetId = this.getAttribute('href').substring(1);
+          const targetElement = document.getElementById(targetId);
+
+          // Check if the target element exists
+          if (targetElement) {
+              // Scroll to the target section smoothly
+              window.scrollTo({
+                  top: targetElement.offsetTop,
+                  behavior: 'smooth'
+              });
+          } else {
+              console.error("Target element not found:", targetId);
+          }
+      });
+  });
+});
