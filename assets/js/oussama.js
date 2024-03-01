@@ -43,9 +43,11 @@ document.addEventListener('DOMContentLoaded', function () {
           // Get the target section ID from the href attribute
           const targetId = this.getAttribute('href').substring(1);
           const targetElement = document.getElementById(targetId);
+          
 
           // Check if the target element exists
           if (targetElement) {
+            
               // Scroll to the target section smoothly
               window.scrollTo({
                   top: targetElement.offsetTop,

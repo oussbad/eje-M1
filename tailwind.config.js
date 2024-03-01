@@ -25,6 +25,7 @@ module.exports = {
       },
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],
+        'sue-ellen': ['Sue Ellen Francisco', 'cursive'],
       },
       fontSize: {
         '6xl': '4rem', // You can adjust the size according to your preference
